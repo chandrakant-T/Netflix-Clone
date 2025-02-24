@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/638e9299-0637-42d1-ba39-54ade4cf2bf6/web/IN-en-20250203-TRIFECTA-perspective_46eb8857-face-4ea6-b901-dbf22b461369_large.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  height: 12vh;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 9vw 0 9.7vw;
+}
+
+button:active {
+  background-color: red;
+}
+svg {
+  fill: rgb(229, 9, 20);
+}
+.logo {
+  width: 9.25rem;
+  height: 2.25rem;
+  box-sizing: border-box;
+}
+.image {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent),
+    linear-gradient(to left, rgba(0, 0, 0, 0.6), transparent),
+    linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.side-nav {
+  display: flex;
+  column-gap: 1vw;
+  margin-right: 30px;
+}
+
+.side-nav .sign-in:hover {
+  cursor: pointer;
+  background-color: rgb(197, 40, 40);
+  border: 1px solid rgb(197, 40, 40);
+  .side-nav .span2 {
+    background-color: rgb(197, 40, 40);
+  }
+}
+
+.side-nav .lang1 {
+  background-color: transparent;
+  color: white;
+  width: 123px;
+
+  text-align: left;
+}
+
+.side-nav button {
+  text-align: left;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+}
+
+select {
+  border: 1px solid grey;
+  outline: none;
+}
+
+.side-nav :nth-child(2) {
+  border: 1px solid red;
+  width: 80px;
+  text-align: center;
+}
+
+.lang1 {
+  display: flex;
+}
+.sign-in {
+  background-color: red;
+  color: white;
+}
+
+.span2 {
+  font-weight: bold;
+}
+.lang {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+
+  font-size: 17px;
+  width: 112px;
+  border-radius: 5px;
+}
+
+.lang:focus {
+  border: 2px solid white;
+  #Hindi {
+    color: black;
+  }
+  #English {
+    color: black;
+  }
+
+  #Hindi1 {
+    color: black;
+  }
+  #English1 {
+    color: black;
+  }
+}
+
+.language {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main {
+  align-content: center;
+  background-color: blue;
+  position: relative;
+  height: 80vh;
+  background-color: transparent;
+  text-align: center;
+}
+
+.main-text {
+  font-size: 4rem;
+  color: white;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: bolder;
+}
+
+.text {
+  font-size: 1.3rem;
+  margin-top: 15px;
+  color: whitesmoke;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+#text {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 15px;
+
+  color: whitesmoke;
+}
+
+.input {
+  display: flex;
+  width: 37em;
+
+  margin: auto;
+  column-gap: 10px;
+
+  justify-content: space-between;
+}
+
+.input-email {
+  text-align: center;
+  height: 7vh;
+  width: 12vw;
+  font-size: 1em;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+input {
+  width: -webkit-fill-available;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  color: white;
+  padding-left: 7px;
+  font-size: 18px;
+}
+
+.input button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+.input button:hover {
+  cursor: pointer;
+  background-color: rgb(197, 40, 40);
+  border: 1px solid rgb(197, 40, 40);
+}
+
+input:focus {
+  outline: 2px solid white;
+}
+
+.curve {
+  position: relative;
+  z-index: 2;
+  align-content: center;
+
+  text-align: center;
+}
+
+.curve::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: -0.65rem;
+
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+  );
+}
+
+.content-1 {
+  padding-top: 60px;
+  padding-left: 100px;
+
+  color: white;
+  background-color: black;
+}
+
+.content {
+  margin-bottom: 10vh;
+}
+
+.main-content {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(10, 1fr);
+  column-gap: 5vw;
+  padding-left: 2vw;
+  padding-top: 8vh;
+  padding-bottom: 6vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.movies {
+  border-radius: 5px;
+}
+.content span {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.movies {
+  opacity: 0;
+
+  transition: all 0.6s ease-in-out;
+}
+
+.movies.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.movies span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 10em;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+
+  -webkit-text-stroke: 2px white;
+}
+
+.mov:hover {
+  transform: scale(1.2, 1.2);
+  transition: transform 0.5s ease;
+}
+
+.content-2 {
+  position: relative;
+  margin-bottom: 3vw;
+}
+
+.content-2 span {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.info {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding-left: 1vw;
+  padding-right: 7vw;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+}
+
+.item {
+  overflow: hidden;
+  padding-top: 2em;
+  padding-right: 16px;
+  width: 18em;
+  height: 16em;
+  background: linear-gradient(135deg, #090935, #330919);
+  color: white;
+  border-radius: 10px;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.item header {
+  text-align: left;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.forward {
+  margin-left: 15px;
+}
+
+.item p {
+  color: grey;
+}
+
+.svg {
+  position: relative;
+}
+
+.svg svg {
+  top: 3em;
+  position: absolute;
+  right: 0;
+}
+
+.svg-2 svg {
+  top: 2em;
+}
+
+.content-3 {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 8rem;
+  position: relative;
+}
+
+.content-3 .question {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  display: flex;
+  padding-left: 1em;
+  justify-content: space-between;
+  padding-right: 2vw;
+  align-items: center;
+}
+
+.FAQ {
+  margin-top: 20px;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 10px;
+  height: 80vh;
+  cursor: pointer;
+}
+
+.question button {
+  background-color: transparent;
+  color: white;
+  border: 0px solid transparent;
+
+  font-size: 1em;
+}
+
+.question:hover {
+  background-color: rgba(128, 121, 121, 0.866);
+  transition: background-color 0.2s ease-in;
+}
+
+.content-4 {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+
+  padding-right: 8rem;
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.email-2 {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 1rem;
+  column-gap: 1em;
+  padding: 0 18em 0 15em;
+}
+
+.email-2 button {
+  width: 15vw;
+  height: 7vh;
+  font-size: 1.5em;
+  background-color: red;
+  color: white;
+  text-align: center;
+  border: 1px solid red;
+
+  cursor: pointer;
+}
+
+.email-2 button:hover {
+  background-color: rgb(197, 40, 40);
+  border: 1px solid rgb(197, 40, 40);
+}
+.input-email-2 {
+  width: -webkit-fill-available;
+  border-radius: 5px;
+}
+
+.content-4 span {
+  font-size: 1em;
+}
+
+footer {
+  height: 35rem;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.contact {
+  color: grey;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 10vh;
+}
+
+footer a {
+  font-weight: bold;
+  color: grey;
+}
+
+.back-drop {
+  font-size: 1em;
+  font-weight: bold;
+
+  display: grid;
+  margin-bottom: 5em;
+  row-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.content-5 .lang {
+  height: 5vh;
+  width: 8vw;
+}
+
+.content-5 .language {
+  margin-bottom: 3rem;
+}
+
+.content-5 span {
+  font-weight: bold;
+  color: grey;
+}
+
+.back-drop a:active {
+  color: red;
+}
+
+
+ 
+
+
